@@ -100,7 +100,11 @@ console.log("User ID:", userId);
         title: {
           display: true,
           text: 'Income vs Expenses vs Balance'
-        }
+        },
+        tooltip: {
+          enabled: false
+        },
+        legend: { display: false },
       },
       scales: {
         y: { beginAtZero: true }
