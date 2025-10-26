@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker Transactions</title>
+  <link rel="stylesheet" href="/css/summary.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="/js/summary.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="top-menu">
+            <h2 class="logo">💰</h2>
+            <ul class="menu">
+            <li id="dashboard"><i>🏠</i> Dashboard</li>
+            <li  id = "transationBtn"><i>📋</i> Transactions</li>
+            <li><i>🗂️</i> Categories</li>
+            <li id="summaryBtn" class="active"><i>📊</i> Summary</li>
+            </ul>
+        </div>
+        <ul class="bottom-menu, menu">
+            <li id="logoutBtn"><i>🚪</i> Logout</li>
+        </ul>
+    </aside>
+
+ <main class="main">
+      <h1 id="welcome_text"></h1>
+
+     <!-- 🔹 Charts section -->
+      <section class="charts-container">
+        <canvas id="incomeExpenseChart"></canvas>
+        <canvas id="expenseChart"></canvas>
+      </section>
+      <!--Cards section-->
+            <section class="stats">
+        <div class="card">
+          <h3>Total Balance</h3>
+          <p>₦0</p>
+        </div>
+        <div class="card">
+          <h3>Income</h3>
+          <p>₦0</p>
+        </div>
+        <div class="card">
+          <h3>Expense</h3>
+          <p>₦0</p>
+        </div>
+      </section>
+
+
+</main>
+</div>
+</body>
+</html>
